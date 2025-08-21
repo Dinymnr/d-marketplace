@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>d-konsertic | Concert Tickets</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <h1 class="logo">d-<span>konsertic</span></h1>
+      <ul>
+        <li><a href="#concerts">Concerts</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="hero">
+      <h2>Your Gateway to the Best Concerts 🎶</h2>
+      <p>Get your tickets for Taylor Swift, NCT Dream, Blackpink, Hindia, Pamungkas, Tulus, Amizah, and more!</p>
+      <a href="#concerts" class="btn">See Concerts</a>
+    </div>
+  </header>
+
+  <main id="concerts">
+    <h2>Upcoming Concerts</h2>
+    <div class="card-container">
+      <div class="card">
+        <img src="https://i.imgur.com/Imq8o2G.jpg" alt="Taylor Swift">
+        <h3>Taylor Swift</h3>
+        <p>World Tour 2025</p>
+        <p class="price">IDR 2,500,000</p>
+        <button onclick="buyTicket('Taylor Swift')">Buy Ticket</button>
+      </div>
+      <div class="card">
+        <img src="https://i.imgur.com/fV4bAhE.jpg" alt="NCT Dream">
+        <h3>NCT Dream</h3>
+        <p>Dream Show</p>
+        <p class="price">IDR 1,800,000</p>
+        <button onclick="buyTicket('NCT Dream')">Buy Ticket</button>
+      </div>
+      <div class="card">
+        <img src="https://i.imgur.com/ZXBtVw7.jpg" alt="Blackpink">
+        <h3>Blackpink</h3>
+        <p>Born Pink Tour</p>
+        <p class="price">IDR 3,000,000</p>
+        <button onclick="buyTicket('Blackpink')">Buy Ticket</button>
+      </div>
+      <div class="card">
+        <img src="https://i.imgur.com/hdWk5mo.jpg" alt="Hindia">
+        <h3>Hindia</h3>
+        <p>Indonesian Tour</p>
+        <p class="price">IDR 500,000</p>
+        <button onclick="buyTicket('Hindia')">Buy Ticket</button>
+      </div>
+      <div class="card">
+        <img src="https://i.imgur.com/7LWp9oA.jpg" alt="Pamungkas">
+        <h3>Pamungkas</h3>
+        <p>Live in Jakarta</p>
+        <p class="price">IDR 600,000</p>
+        <button onclick="buyTicket('Pamungkas')">Buy Ticket</button>
+      </div>
+      <div class="card">
+        <img src="https://i.imgur.com/0cNq7MJ.jpg" alt="Tulus & Amizah">
+        <h3>Tulus x Amizah</h3>
+        <p>Special Collaboration</p>
+        <p class="price">IDR 750,000</p>
+        <button onclick="buyTicket('Tulus & Amizah')">Buy Ticket</button>
+      </div>
+      <div class="card">
+        <img src="https://i.imgur.com/4NJlAcm.jpg" alt="Bruno Mars">
+        <h3>Bruno Mars</h3>
+        <p>24K Magic Tour</p>
+        <p class="price">IDR 4,000,000</p>
+        <button onclick="buyTicket('Bruno Mars')">Buy Ticket</button>
+      </div>
+    </div>
+  </main>
+
+  <footer id="about">
+    <p><strong>d-konsertic</strong> - Bringing music closer to you 💜</p>
+    <p id="contact">Contact: support@d-konsertic.com</p>
+  </footer>
+
+  <div id="ticketModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2 id="ticketTitle"></h2>
+      <p>Your ticket has been booked! 🎟️</p>
+      <img src="https://i.imgur.com/5x3R9sC.png" alt="QR Code" class="qr">
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

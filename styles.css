@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #FFF5E1;
+  color: #333;
+}
+
+header {
+  background: linear-gradient(135deg, #CDB4DB, #FFC8DD);
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.logo {
+  font-size: 1.5em;
+}
+.logo span {
+  color: #B5EAD7;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.hero {
+  padding: 50px 20px;
+}
+
+.hero h2 {
+  font-size: 2em;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 15px;
+  background: #B5EAD7;
+  color: #333;
+  padding: 10px 20px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+main {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  padding: 15px;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.card h3 {
+  margin: 10px 0 5px;
+}
+
+.price {
+  color: #CDB4DB;
+  font-weight: bold;
+}
+
+button {
+  background: #FFC8DD;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #CDB4DB;
+  color: white;
+}
+
+footer {
+  background: #CDB4DB;
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: auto;
+  padding: 20px;
+  border-radius: 12px;
+  width: 80%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.close {
+  float: right;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.qr {
+  margin-top: 15px;
+  width: 150px;
+}
