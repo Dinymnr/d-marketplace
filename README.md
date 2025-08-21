@@ -1,10 +1,11 @@
-# d-konsertic 🎶
-Concert ticket booking website with pastel theme.
+# d-marketplace
+Website marketplace barang unik dengan tema pastel.
 
 ## Features
-- Browse concerts (Taylor Swift, NCT Dream, Blackpink, Hindia, Pamungkas, Tulus, Amizah, Bruno Mars)
-- Buy tickets (dummy)
-- QR code confirmation modal
+- Lihat katalog barang handmade, aksesoris custom, dan merch lucu
+- Filter kategori: Barang Absurd, Paling Laku, Baru Masuk
+- Tampilan grid interaktif dengan desain modern
 
 ## How to run
-Open `index.html` in your browser or deploy via GitHub Pages.
+Buka langsung di browser:
+[https://username.github.io/d-marketplace/](https://username.github.io/d-marketplace/)
